@@ -10,21 +10,6 @@ Si la nave aterriza con exito, recibimos un mensaje de felicitación y un mensaj
 
 Creamos una función para el alunizaje, ponemos un condicional if para que solo se produzca un aterrizaje correcto cuando se cumpla condición respecto a la velocidad, un alert para felicitar al jugador y animalo a probar otra dificultad y si por el contrario no se cumple la condicion (else), cambiamos la imagen a una nave destruida/explosion, y que muestre otro mensaje explicando que ha pasado, y un segundo prompt preguntando al jugador si desea probar de nuevo
 
-///////////////////////////
-function landing()
-{
-	if (v <= 5){
-		alert("¡Felicidades!\nHas conseguido alunizar con exito, seras capaz de hacerlo en modo dificil?"); restart();
-	}else{
-		document.getElementById("imgrocket").src="img/rocketBOOM.png";
-		setTimeout(function(){mostrarAviso()},500);
-		function mostrarAviso(){
-			alert("¡BOOM!\nIbas demasiado rapido y la nave no ha podido aterrizar con exito."); restart();
-		}
-	}	
-}
-//////////////////////////
-
 Menus editados para incluir botones y redirigir a diferentes HTML, codigo editado para mostrar un prompt que avisa de que para acceder a dichos html se tiene que abandonar la partida.
 
 Cambiamos ligeramente el codigo para incluir los botones en el desplegable y que apunten a una función que previamente hemos creado que redirige a diferentes html, no si antes avisar al jugador de que para visitar dichas paginas es necesario abandonar la partida.
