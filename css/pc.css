@@ -85,3 +85,9 @@ img.center
   width: auto;
   margin-left: -300px
 }
+
+#imgMotor{
+	height: 40%;
+	display: none;
+	margin: auto;
+}
