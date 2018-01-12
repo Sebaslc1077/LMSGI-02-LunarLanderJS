@@ -100,12 +100,12 @@ function actualizarFuel(){
 function landing()
 {
 	if (v <= 5){
-		alert(¡Felicidades! Has conseguido alunizar con exito, serás capaz de hacerlo en modo dificil?); restart();
+		alert("¡Felicidades! Has conseguido alunizar con exito, serás capaz de hacerlo en modo dificil?"); restart();
 	}else{
 		document.getElementById("imgrocket").src="img/rocketBOOM.png";
 		setTimeout(function(){mostrarAviso()},500);
 		function mostrarAviso(){
-			alert(¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito.); restart();
+			alert("¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); restart();
 		}
 	}	
 }
