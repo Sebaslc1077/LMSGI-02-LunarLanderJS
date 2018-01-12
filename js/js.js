@@ -58,16 +58,16 @@ function start(){
 function stop(){
 	clearInterval(timer);
 }
-function reanudar() {
+function restart() {
 	stop();
 	start();
-	document.getElementById("reanudar").style.display="none";
-	document.getElementById("pausa").style.display="inline-block";
+	document.getElementById("restart").style.display="none";
+	document.getElementById("pause").style.display="inline-block";
 }
-function pausar() {
+function pause() {
 	stop();
-	document.getElementById("pausa").style.display="none";
-	document.getElementById("reanudar").style.display="inline-block";
+	document.getElementById("pause").style.display="none";
+	document.getElementById("restart").style.display="inline-block";
 }
 function moverRocket(){
 	//cambiar velocidad y posicion
