@@ -72,7 +72,7 @@ function moverRocket(){
 		document.getElementsByClassName("center")[0].style.top = y+"%";
 
 	} else { 
-		stop();
+		stop(); landing();
 	}
 }
 function motorOn(){
