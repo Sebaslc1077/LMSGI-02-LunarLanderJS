@@ -104,3 +104,17 @@ function actualizarFuel(){
 	if (c < 0 ) c = 0;
 	combustible.innerHTML=c;	
 }
+//FUNCION QUE ACTUA EN CUANTO SE ENCIENDE EL MOTOR
+function encenderMotor() {
+	a=-g;
+	document.getElementById("fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
+	document.getElementById("imgMotor").style.display="block";
+	if (timerFuel==null) { 
+			timerFuel=setInterval(function(){ actualizarfuel(); }, 100);
+			}
+	if (combustible<=0) {
+			apagarMotor();
+			document.getElementById("fuel").innerHTML=0;
+		}
+}
