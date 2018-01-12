@@ -111,7 +111,7 @@ function landing()
 }
 
 function restart(){
-	var r = confirm("¿Quieres intentarlo de nuevo?");
+	var r = confirm("Quieres intentarlo de nuevo?");
 	if (r == true){
     	window.location="index-pc.html";
 	}else{
