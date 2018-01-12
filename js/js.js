@@ -135,3 +135,11 @@ function exittoabout(){
 		stop();
 	} 
 }
+function easy(){
+	//cambia la dificultad a facil
+	timer=setInterval(function(){ moverRocket(); }, dt*1000);
+}
+function hard(){
+	//cambia la dificultad a dificil
+	timer=setInterval(function(){ moverRocket(); }, dt*5000);
+}
