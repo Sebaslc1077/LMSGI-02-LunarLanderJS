@@ -105,7 +105,7 @@ function landing()
 		document.getElementById("rocket").src="img/rocketBOOM.png";
 		setTimeout(function(){mostrarAviso()},500);
 		function mostrarAviso(){
-			alert("¡BOOM!\ Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); reStart();
+			alert("¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); reStart();
 		}
 	}	
 }
