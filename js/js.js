@@ -52,14 +52,14 @@ window.onload = function(){
 //Definición de funciones
 function start(){
 	//cada intervalo de tiempo mueve la nave
-	timer=setInterval(function(){ moverNave(); }, dt*1000);
+	timer=setInterval(function(){ moverRocket(); }, dt*1000);
 }
 
 function stop(){
 	clearInterval(timer);
 }
 
-function moverNave(){
+function moverRocket(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
 	y +=v*dt;
