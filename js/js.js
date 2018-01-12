@@ -62,7 +62,7 @@ function stop(){
 function moverRocket(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
-	y -=v*dt;
+	y +=v*dt;
 	//actualizar marcadores
 	velocidad.innerHTML=v;
 	altura.innerHTML=y;
