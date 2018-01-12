@@ -100,18 +100,18 @@ function actualizarFuel(){
 function landing()
 {
 	if (v <= 5){
-		alert("Felicidades!\nHas conseguido alunizar con exito, seras capaz de hacerlo en modo dificil?"); restart();
+		alert("¡Felicidades!\nHas conseguido alunizar con exito, seras capaz de hacerlo en modo dificil?"); restart();
 	}else{
 		document.getElementById("imgrocket").src="img/rocketBOOM.png";
 		setTimeout(function(){mostrarAviso()},500);
 		function mostrarAviso(){
-			alert("BOOM!\nIbas demasiado rapido y la nave no ha podido aterrizar con exito."); restart();
+			alert("¡BOOM!\nIbas demasiado rapido y la nave no ha podido aterrizar con exito."); restart();
 		}
 	}	
 }
 
 function restart(){
-	var r = confirm("Quieres intentarlo de nuevo?");
+	var r = confirm("¿Quieres intentarlo de nuevo?");
 	if (r == true){
     	window.location="index-pc.html";
 	}else{
