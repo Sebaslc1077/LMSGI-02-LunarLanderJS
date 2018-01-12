@@ -14,7 +14,7 @@ var velocidad = null;
 var altura = null;
 var combustible = null;
 
-document.getElementById("restart").onclick=function(){restart();};
+//document.getElementById("restart").onclick=function(){restart();};
 	document.getElementById("pause").onclick=function(){pause();};
 //al cargar por completo la página...
 window.onload = function(){
