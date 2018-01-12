@@ -69,7 +69,7 @@ function moverNave(){
 	
 	//mover hasta que top sea un 70% de la pantalla
 	if (y<70){ 
-		document.getElementById("nave").style.top = y+"%"; 
+		document.getElementById("rocket").style.top = y+"%"; 
 	} else { 
 		stop();
 	}
