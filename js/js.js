@@ -62,7 +62,7 @@ function stop(){
 function moverRocket(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
-	y +=v*dt;
+	y -=v*dt;
 	//actualizar marcadores
 	velocidad.innerHTML=v;
 	altura.innerHTML=y;
@@ -76,13 +76,13 @@ function moverRocket(){
 }
 function motorOn(){
 	//el motor da aceleración a la nave
-	a=g;
+	a=-g;
 	//mientras el motor esté activado gasta combustible
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
 }
 function motorOff(){
-	a=-g;
+	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
 }
