@@ -58,17 +58,6 @@ function start(){
 function stop(){
 	clearInterval(timer);
 }
-function restart() {
-	stop();
-	start();
-	document.getElementById("restart").style.display="none";
-	document.getElementById("pause").style.display="inline-block";
-}
-function pause() {
-	stop();
-	document.getElementById("pause").style.display="none";
-	document.getElementById("restart").style.display="inline-block";
-}
 function moverRocket(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
