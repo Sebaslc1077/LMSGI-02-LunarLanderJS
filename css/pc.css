@@ -85,3 +85,8 @@ img.center
   width: auto;
   margin-left: -300px
 }
+
+#rocket,.d{position:fixed;width:100%}
+#rocket{text-align:center;top:10%;height:20%}
+#rocket img{height:100%}
+
