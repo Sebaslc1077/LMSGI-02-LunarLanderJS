@@ -79,16 +79,16 @@ function motorOn(){
 	//el motor da aceleración a la nave
 	a=-g;
 	//mientras el motor esté activado gasta combustible
+	document.getElementById("rocket").src="img/rocketON.png";
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
-	document.getElementById("rocket").src="img/rocketON.png";
 
 }	
 function motorOff(){
 	a=g;
+	document.getElementById("rocket").src="img/rocketOFF.png";
 	clearInterval(timerFuel);
 	timerFuel=null;
-	document.getElementById("rocket").src="img/rocketOFF.png";
 
 }
 function actualizarFuel(){
