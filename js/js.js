@@ -137,10 +137,10 @@ function exittoabout(){
 }
 function easy(){
 	//cambia la dificultad a facil
-	dt*1000;
+	var v = 1
 }
 function hard(){
 	//cambia la dificultad a dificil
-	dt*5000;
+	var v = 5
 
 }
