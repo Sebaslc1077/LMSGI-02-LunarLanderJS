@@ -104,17 +104,24 @@ function actualizarFuel(){
 	if (c < 0 ) c = 0;
 	combustible.innerHTML=c;	
 }
-//FUNCION QUE ACTUA EN CUANTO SE ENCIENDE EL MOTOR
-function encenderMotor() {
-	a=-g;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
-	document.getElementById("imgMotor").style.display="block";
-	if (timerFuel==null) { 
-			timerFuel=setInterval(function(){ actualizarfuel(); }, 100);
-			}
-	if (combustible<=0) {
-			apagarMotor();
-			document.getElementById("fuel").innerHTML=0;
+function landing()
+{
+	if (v <= 5){
+		alert("¡Felicidades! Has conseguido alunizar con exito, serás capaz de hacerlo en modo dificil?"); restart();
+	}else{
+		document.getElementById("imgnave").src="img/navexplosion.png";
+		setTimeout(function(){mostrarAviso()},500);
+		function mostrarAviso(){
+			alert("¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); reStart();
 		}
+	}	
+}
+
+function restart(){
+	var r = confirm("¿Quieres intentarlo de nuevo?");
+	if (r == true){
+    	window.location="index.html";
+	}else{
+		stop();
+	} 
 }
