@@ -137,9 +137,9 @@ function exittoabout(){
 }
 function easy(){
 	//cambia la dificultad a facil
-	dt*1000;
+	y +=v*dt*5000;
 }
 function hard(){
 	//cambia la dificultad a dificil
-	dt*5000;
+	y +=v*dt*5000;
 }
