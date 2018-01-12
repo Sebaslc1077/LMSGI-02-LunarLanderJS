@@ -81,13 +81,15 @@ function motorOn(){
 	//mientras el motor esté activado gasta combustible
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
-	document.getElementById("rocket").src="img/rocketfire.gif";
+	document.getElementById("rocket").src="img/rocketON.png";
 
 }	
 function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
+	document.getElementById("rocket").src="img/rocketOFF.png";
+
 }
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
@@ -100,7 +102,7 @@ function landing()
 	if (v <= 5){
 		alert("¡Felicidades! Has conseguido alunizar con exito, serás capaz de hacerlo en modo dificil?"); restart();
 	}else{
-		document.getElementById("imgnave").src="img/navexplosion.png";
+		document.getElementById("rocket").src="img/navexplosion.png";
 		setTimeout(function(){mostrarAviso()},500);
 		function mostrarAviso(){
 			alert("¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); reStart();
