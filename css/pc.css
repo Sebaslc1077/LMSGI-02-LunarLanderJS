@@ -77,8 +77,8 @@ img
 
 img.center 
 {
- position: absolute;
-  top: 0px;
+ position: fixed;
+  top: 10%;
   left: 50%;
   height: 400px;
   width: auto;
