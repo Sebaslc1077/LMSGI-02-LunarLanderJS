@@ -92,7 +92,9 @@ function motorOn(){
 	//mientras el motor esté activado gasta combustible
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);	
-}
+	document.getElementById("rocket").src="img/rocketfire.gif";
+
+}	
 function motorOff(){
 	a=g;
 	clearInterval(timerFuel);
