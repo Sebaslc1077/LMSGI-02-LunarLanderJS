@@ -102,7 +102,7 @@ function landing()
 	if (v <= 5){
 		alert("¡Felicidades! Has conseguido alunizar con exito, serás capaz de hacerlo en modo dificil?"); restart();
 	}else{
-		document.getElementById("rocket").src="img/navexplosion.png";
+		document.getElementById("rocket").src="img/rocketBOOM.png";
 		setTimeout(function(){mostrarAviso()},500);
 		function mostrarAviso(){
 			alert("¡BOOM! Ibas demasiado rapido y la nave no ha podido aterrizar con exito."); reStart();
