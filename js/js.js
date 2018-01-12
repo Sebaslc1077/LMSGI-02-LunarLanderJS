@@ -118,3 +118,20 @@ function restart(){
 		stop();
 	} 
 }
+
+function exittorules(){
+	var r = confirm("Para ver las instrucciones has de salir de la partida\n¿Estas seguro de que quieres salir?");
+	if (r == true){
+    	window.location="howto.html";
+	}else{
+		stop();
+	} 
+}
+function exittoabout(){
+	var r = confirm("Para ver la siguiente informacion has de salir de la partida\n¿Estas seguro de que quieres salir?");
+	if (r == true){
+    	window.location="about.html";
+	}else{
+		stop();
+	} 
+}
