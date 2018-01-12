@@ -70,7 +70,7 @@ function moverRocket(){
 	//mover hasta que top sea un 70% de la pantalla
 	if (y<70){ 
 		//document.getElementById("rocket").style.top = y+"%"; 
-		getElementsByClassName("center")[0].style.top = y+"%";
+		document.getElementsByClassName("center")[0].style.top = y+"%";
 
 	} else { 
 		stop();
