@@ -1,5 +1,9 @@
 # LMSGI-02-LunarLanderJS
 
+**RAWGIT**
+
+https://rawgit.com/Sebaslc1077/LMSGI-02-LunarLanderJS/master/index-pc.html
+
 Imagenes optimizadas previamente con IMG Resizer, editadas photoshop para representar diferentes estados de la nave.
 
 Al cambiar el estado de la nave, tambien cambia la aceleración. Si la nave se estrella, tambien cambia la imagen y recibimos otro prompt explicando que ha pasado y preguntado si deseamos probar de nuevo. Ante lo cual si respondemos que si, se reinicia la partida.
